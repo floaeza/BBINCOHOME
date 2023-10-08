@@ -23,7 +23,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   imports: [
     CommonModule,
     BbincoRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
   ]
 })
 export class BbincoModule { }

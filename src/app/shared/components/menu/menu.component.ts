@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { SoundsService } from '../../services/sounds.service';
 
 @Component({
   selector: 'shared-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css'],
 })
 export class MenuComponent implements OnInit{
-  isCollapsed: boolean | undefined;
   public menuItems: MenuItem[] = [];
-
+  constructor(private soundService : SoundsService){}
   ngOnInit(): void {
-    this.isCollapsed = false;
     this.menuItems = [
       {
         label:'Home',
@@ -33,8 +32,19 @@ export class MenuComponent implements OnInit{
     ]
   }
 
-  toggleCollapse(){
-    this.isCollapsed = !this.isCollapsed;
+  playHoverSound():void {
+    // this.soundService.playSound('menu_hover.mp3');
+
+    this.soundService.playSound('menu_hover.mp3')
+    .then(() => {
+      // Reproducción exitosa
+    })
+    .catch((error) => {
+      console.error('Error al reproducir el sonido:', error);
+    });
+  }
+  stopHoverSound():void {
+    this.soundService.stopSound();
   }
 
 }

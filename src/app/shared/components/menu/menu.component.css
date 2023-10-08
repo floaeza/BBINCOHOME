@@ -85,6 +85,8 @@
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
     background-color: #1e3557;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
