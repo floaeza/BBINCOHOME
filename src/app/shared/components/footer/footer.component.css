@@ -1,0 +1,86 @@
+.info_section {
+    background-color: #1e3557;
+    color: #ffff;
+    padding: 75px 0 10px 0;
+}
+
+.info_section .row > div{
+    margin-bottom: 25px;
+}
+
+.info_section .info_logo{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.info_section .info_logo
+.navbar-brand {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.info_section .info_logo .navbar-brand span {
+    font-size: 24px;
+    color: #ffffff;
+}
+ 
+.navbar-brand span {
+    font-weight: bold;
+}
+
+.info_section h5 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.info_section .info_links ul {
+    padding: 0;
+}
+
+.info_section .info_links ul li {
+    list-style-type: none;
+}
+
+.info_section .info_links ul li a {
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.info_section .info_contact{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+.info_section .info_contact a {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.info_section .info_contact a i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer_section{
+    font-weight: 500;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1e3557;
+}
+
+.footer_section p {
+    color: rgba(254, 254, 255, 0.7);
+    margin: 0;
+    text-align: center;
+}
+
+.footer_section a {
+    color: rgba(254, 254, 255, 0.7);
+}

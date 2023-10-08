@@ -1,0 +1,28 @@
+<p-carousel [value]="items" [numVisible]="1" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions" [autoplayInterval]="6000">
+    <ng-template let-item pTemplate="item">
+        <section class="slider_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="detail-box">
+
+                            <h1> {{ item.title_h1 }}
+                                <br>
+                                <!-- verde -->
+                                <span> {{ item.title_span }}</span>
+                            </h1>
+                            <p>
+                                {{ item.paragraph }}
+                            </p>
+                            <div class="btn-box" *ngIf="item.buttons && item.buttons.length > 0">
+                                <!-- verde -->
+                                <a *ngFor="let button of item.buttons" [class]="button.clase" [href]="button.enlace">
+                                    {{button.texto}} </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </ng-template>
+</p-carousel>
