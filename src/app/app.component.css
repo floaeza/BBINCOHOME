@@ -35,4 +35,4 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
     pointer-events: none; /* Para que no interfiera con los eventos del contenido debajo */
-  }
+}

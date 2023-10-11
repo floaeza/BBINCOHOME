@@ -36,6 +36,11 @@
     align-items: center;
     color: #ffffff;
     font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.header_top .contact_link-container a:hover{
+    color: #8eb83a;
 }
 
 .header_top .contact_link-container a i {

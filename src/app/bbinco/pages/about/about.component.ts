@@ -14,6 +14,27 @@ export class AboutComponent implements OnInit{
   imagesVision:     string[] = [];
   imagesUbication:  string[] = [];
 
+  position:               string = 'top' ?? '';
+  showIndicatorsOnItem:   boolean = false;
+  positionOptions = [
+    {
+        label: 'Bottom',
+        value: 'bottom'
+    },
+    {
+        label: 'Top',
+        value: 'top'
+    },
+    {
+        label: 'Left',
+        value: 'left'
+    },
+    {
+        label: 'Right',
+        value: 'right'
+    }
+  ];
+
   constructor ( private imagesFromFolderService: ImagesFromFolderService ) {}
   ngOnInit(): void {
     this.imagesUs = this.imagesFromFolderService.getImages('us');

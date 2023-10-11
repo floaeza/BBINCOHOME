@@ -8,6 +8,9 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { TableModule } from 'primeng/table';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { CarouselModule } from 'primeng/carousel';
+import { GalleriaModule } from 'primeng/galleria';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { DividerModule } from 'primeng/divider';
 
 
 
@@ -22,7 +25,10 @@ import { CarouselModule } from 'primeng/carousel';
     ToolbarModule,
     TableModule,
     TabMenuModule,
-    CarouselModule
+    CarouselModule,
+    GalleriaModule,
+    RadioButtonModule,
+    DividerModule
   ]
 })
 export class PrimeNgModule { }

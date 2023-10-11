@@ -9,6 +9,8 @@ import { ServicesComponent } from './pages/services/services.component';
 import { TeamComponent } from './pages/team/team.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { FormsModule }    from '@angular/forms';
+import { GalleriaComponent } from './components/galleria/galleria.component';
 
 
 @NgModule({
@@ -18,12 +20,14 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ServicesComponent,
     TeamComponent,
     ContactComponent,
-    CarouselComponent
+    CarouselComponent,
+    GalleriaComponent
   ],
   imports: [
     CommonModule,
     BbincoRoutingModule,
     PrimeNgModule,
+    FormsModule
   ]
 })
 export class BbincoModule { }

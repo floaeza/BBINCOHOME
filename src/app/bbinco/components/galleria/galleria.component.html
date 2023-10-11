@@ -1,0 +1,10 @@
+<!-- <div class="card md:flex md:justify-content-center"> -->
+    <p-galleria [value]="images" [autoPlay]="true" [circular]="true" [responsiveOptions]="responsiveOptions"
+        [showThumbnails]="false" [numVisible]="3" [transitionInterval]="6000">
+        <ng-template pTemplate="item" let-item>
+            <div class="img-box">
+                <img [src]="item" class="img-fluid"/>
+            </div>
+        </ng-template>
+    </p-galleria>
+<!-- </div> -->
