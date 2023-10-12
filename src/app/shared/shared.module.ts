@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MenuComponent } from './components/menu/menu.component';
-import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { CommonModule }       from '@angular/common';
+import { NgModule }           from '@angular/core';
+
+import { PrimeNgModule }      from '../prime-ng/prime-ng.module';
+
+import { FooterComponent }    from './components/footer/footer.component';
 import { HeaderTopComponent } from './components/header-top/header-top.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { MenuComponent }      from './components/menu/menu.component';
+import { CustomNavDirective } from './directives/custom-nav.directive';
 
 
 
@@ -11,7 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     MenuComponent,
     HeaderTopComponent,
-    FooterComponent
+    FooterComponent,
+    CustomNavDirective
   ],
   imports: [
     CommonModule,

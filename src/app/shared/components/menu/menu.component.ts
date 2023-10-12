@@ -37,7 +37,7 @@ export class MenuComponent implements OnInit{
     if (window.scrollY > 70) { // Cambia 100 a la posición en la que deseas que ocurra el cambio
       this.scrolled = true;
       console.log("scrol");
-      
+
     } else {
       this.scrolled = false;
     }

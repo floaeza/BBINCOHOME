@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
-
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -9,8 +8,8 @@ import * as AOS from 'aos';
 export class ServicesComponent implements OnInit{
   ngOnInit(): void {
     AOS.init({
-      duration: 800, 
-      offset: 350 
+      duration: 800,
+      offset: 350
     });
   }
 
