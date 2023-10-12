@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg custom_nav-container">
+<nav class="navbar navbar-expand-lg custom_nav-container" [ngClass]="{'scrolled': scrolled}">
     <a class="navbar-brand" routerLink="">
         <span>BBINCO</span>
     </a>
@@ -15,7 +15,7 @@
                 [routerLinkActive]="['active']"
                 [routerLinkActiveOptions]="{exact: true}"
             >
-                <a routerLink="" class="nav-link">
+                <a routerLink="home" class="nav-link">
                     Inicio
                 </a>
             </li>

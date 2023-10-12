@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeAnimation } from '../../animations/fade-animations';
 import { ImagesFromFolderService } from '../../services/images-from-folder.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about',
@@ -37,6 +38,10 @@ export class AboutComponent implements OnInit{
 
   constructor ( private imagesFromFolderService: ImagesFromFolderService ) {}
   ngOnInit(): void {
+    AOS.init({
+      duration: 800, 
+      offset: 325 
+    });
     this.imagesUs = this.imagesFromFolderService.getImages('us');
     this.imagesHistory = this.imagesFromFolderService.getImages('history');
     this.imagesVision = this.imagesFromFolderService.getImages('vision');

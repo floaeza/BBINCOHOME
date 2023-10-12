@@ -11,6 +11,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FormsModule }    from '@angular/forms';
 import { GalleriaComponent } from './components/galleria/galleria.component';
+import { LayoutPagComponent } from './pages/layout-page/layout-pag.component';
+import { SharedModule } from '../shared/shared.module';
+import { ServiceHotelsPageComponent } from './pages/service-hotels-page/service-hotels-page.component';
+import { ServiceResidencesPageComponent } from './pages/service-residences-page/service-residences-page.component';
+
 
 
 @NgModule({
@@ -21,13 +26,17 @@ import { GalleriaComponent } from './components/galleria/galleria.component';
     TeamComponent,
     ContactComponent,
     CarouselComponent,
-    GalleriaComponent
+    GalleriaComponent,
+    LayoutPagComponent,
+    ServiceHotelsPageComponent,
+    ServiceResidencesPageComponent
   ],
   imports: [
     CommonModule,
     BbincoRoutingModule,
     PrimeNgModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ]
 })
 export class BbincoModule { }

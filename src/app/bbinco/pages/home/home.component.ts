@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { fadeAnimation } from '../../animations/fade-animations';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,12 @@ import { fadeAnimation } from '../../animations/fade-animations';
   styleUrls: ['./home.component.css'],
   animations: [fadeAnimation]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+  ngOnInit(): void {
+    AOS.init({
+      duration: 800, 
+      offset: 350 
+    });
+  }
 
 }

@@ -12,7 +12,6 @@ body{
   .hero_area {
     min-height: auto;
   }
-
   .main_logo_container h2 {
     font-size: 14px !important;
   }
@@ -52,6 +51,20 @@ body{
   .img_container{
     width: 80%;
     margin-left: 10%;
+  }
+  .layout_padding {
+    padding-top: 30px !important;
+  }
+  .slider_section {
+    padding-top: 0 !important;
+  }
+  .navbar.scrolled{
+    background-color: transparent !important;
+    /* background: linear-gradient(to right, #000d1a, #052745); */
+}
+  .header_section {
+    position: static !important;
+    width: 0;
   }
   .main_logo_container {
     display: none !important; 

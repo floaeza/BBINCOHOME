@@ -11,6 +11,7 @@ import { CarouselModule } from 'primeng/carousel';
 import { GalleriaModule } from 'primeng/galleria';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { DividerModule } from 'primeng/divider';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 
 
@@ -28,7 +29,8 @@ import { DividerModule } from 'primeng/divider';
     CarouselModule,
     GalleriaModule,
     RadioButtonModule,
-    DividerModule
+    DividerModule,
+    ScrollTopModule
   ]
 })
 export class PrimeNgModule { }

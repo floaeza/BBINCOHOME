@@ -1,5 +1,6 @@
 .layout_padding {
-  padding-top: 90px;
+  /* padding-top: 30px; */
+  padding-top: 170px;
   padding-bottom: 90px;
 }
 
@@ -87,7 +88,7 @@
 }
 
 .row{
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 
 .divider{

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Item } from '../../interfaces/carouselItem.interface';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'component-carousel',
@@ -13,6 +14,10 @@ export class CarouselComponent implements OnInit {
   responsiveOptions: any[] | undefined;
 
   ngOnInit(): void {
+    AOS.init({
+      duration: 800, 
+      offset: 350 
+    });
     this.items = [
       {
         title_h1: "Innovación en Acción",
