@@ -79,3 +79,9 @@
     background-color: #1e3557;
     border: 2px solid #1e3557;
 }
+
+@media (max-width: 768px){
+    .layout_padding{
+        padding-top: 0;
+    }
+}

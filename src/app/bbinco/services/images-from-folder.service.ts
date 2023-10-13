@@ -27,6 +27,16 @@ export class ImagesFromFolderService {
         `assets/pictures/${ folderName }/2.jpg`,
         `assets/pictures/${ folderName }/3.jpg`,
       ],
+      servicesHotels:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
+      ],
+      servicesResidences:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
+      ]
     };
 
     return imageMap[folderName] || [];

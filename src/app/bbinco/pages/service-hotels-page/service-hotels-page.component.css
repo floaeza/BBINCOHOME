@@ -118,6 +118,12 @@
     z-index: 2;
 }
 
+.gallery{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
 .hotel-services-list{
   list-style-type: none;
   padding: 0;
@@ -134,5 +140,13 @@
 @media (min-width: 1200px){
     .container{
         max-width: 1170px;
+    }
+}
+@media (max-width: 768px){
+    .about_section .img-box{
+        margin-left: 35px !important;
+    }
+    .layout_padding-bottom{
+        padding-top: 0;
     }
 }

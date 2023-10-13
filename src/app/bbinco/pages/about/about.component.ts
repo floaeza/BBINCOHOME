@@ -10,10 +10,10 @@ import * as AOS from 'aos';
   animations: [fadeAnimation]
 })
 export class AboutComponent implements OnInit{
-  imagesUs:         string[] = [];
-  imagesHistory:    string[] = [];
-  imagesVision:     string[] = [];
-  imagesUbication:  string[] = [];
+  public imagesUs:         string[] = [];
+  public imagesHistory:    string[] = [];
+  public imagesVision:     string[] = [];
+  public imagesUbication:  string[] = [];
 
   position:               string = 'top' ?? '';
   showIndicatorsOnItem:   boolean = false;

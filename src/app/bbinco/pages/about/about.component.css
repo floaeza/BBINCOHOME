@@ -94,3 +94,9 @@
 .divider{
   margin: auto;
 }
+
+@media (max-width: 768px){
+  .layout_padding-bottom{
+      padding-top: 0 !important;
+  }
+}
