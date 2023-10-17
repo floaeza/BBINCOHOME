@@ -1,13 +1,15 @@
 .layout_padding-bottom{
     padding-top: 170px;
-    padding-bottom: 90px;
+    /* padding-bottom: 90px; */
 }
 .about_section .row{
     -webkit-box-align: center;
     align-items: center;
     background-color: #ffff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 4px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .heading_container {
@@ -134,6 +136,111 @@
   margin-right: 5px;
   font-weight: bold;
 }
+.section-heading h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product_section {
+    width: 100%;
+    float: left;
+}
+
+.layout_padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.product_section .row {
+    background-color: #ffffff;
+    padding: 35px;
+}
+
+.product_text {
+    padding-bottom: 15px;
+}
+
+.product_text h2 {
+    width: 100%;
+    float: left;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product_text h2::before {
+    content: "";
+    width: 40px;
+    height: 7px;
+    background-color: #8eb83a;
+    border-radius: 10px;
+    position: absolute;
+    /* bottom: 0; */
+    margin-top: 3%;
+}
+
+.product_text h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.long_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.long_text p {
+    margin: 20px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.product_section_2 {
+    width: 100%;
+}
+
+.image_2 {
+    width: 100%;
+}
+
+.image_2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game_text {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    text-align: center;
+}
+
+.price_text h2 {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.product_section_2 p {
+    text-align: justify;
+}
+
+.product_section_2 .row .col-md-6 {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
 
 
 /* responsive */
@@ -148,5 +255,15 @@
     }
     .layout_padding-bottom{
         padding-top: 0;
+    }
+    .product_text h2::before {
+        margin-top: 16%;
+    }
+
+    .product_section_2 p {
+        text-align: center;
+    }
+    .flip-card{
+        height: 185px;
     }
 }

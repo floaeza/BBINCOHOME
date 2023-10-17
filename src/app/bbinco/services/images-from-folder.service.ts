@@ -36,6 +36,21 @@ export class ImagesFromFolderService {
         `assets/pictures/${ folderName }/1.jpg`,
         `assets/pictures/${ folderName }/2.jpg`,
         `assets/pictures/${ folderName }/3.jpg`,
+      ],
+      valenciaExperience:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
+      ],
+      mandarinaExperience:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
+      ],
+      capeExperience:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
       ]
     };
 

@@ -1,0 +1,14 @@
+<div class="flip-card" [class.flipped]="isFlipped" (mouseenter)="flipCard()" (mouseleave)="flipCard()">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="image_2">
+          <img [src]="portadaPath" alt="">
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="image_2">
+          <component-galleria [images]="carouselImages"></component-galleria>
+        </div>
+      </div>
+    </div>
+  </div>
