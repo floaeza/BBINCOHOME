@@ -16,7 +16,7 @@ export class CustomNavDirective implements OnInit{
 
   }
   @HostListener('window:scroll', ['$event'])
-  onScroll(){  
+  onScroll(){
     if( !this.htmlElement )return;
     if(window.scrollY > this._scrollPixels){
       this.htmlElement!.nativeElement.style.backgroundColor = this._backgroundColor;
@@ -26,13 +26,13 @@ export class CustomNavDirective implements OnInit{
     if (window.scrollY <= this._scrollPixels) {
       this.htmlElement.nativeElement.style.opacity = '0';
       if (this.hideTimer) {
-        clearTimeout(this.hideTimer); // Cancela el temporizador si ya estaba programado
+        clearTimeout(this.hideTimer);
       }
     }
     if (window.scrollY === 0) {
       this.htmlElement.nativeElement.style.opacity = '1';
       if (this.hideTimer) {
-        clearTimeout(this.hideTimer); // Cancela el temporizador si ya estaba programado
+        clearTimeout(this.hideTimer);
       }
     }
 
@@ -55,7 +55,7 @@ export class CustomNavDirective implements OnInit{
       if(window.scrollY > this._scrollPixels){
         this.hideTimer = setTimeout(() => {
           this.htmlElement!.nativeElement.style.opacity = '0';
-        }, 2000); 
+        }, 2000);
       }
     }
   }

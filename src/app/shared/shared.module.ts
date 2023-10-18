@@ -7,6 +7,8 @@ import { FooterComponent }    from './components/footer/footer.component';
 import { HeaderTopComponent } from './components/header-top/header-top.component';
 import { MenuComponent }      from './components/menu/menu.component';
 import { CustomNavDirective } from './directives/custom-nav.directive';
+import { LoaderComponent } from './components/loader/loader.component';
+import { CustomLoaderDirective } from './directives/custom-loader.directive';
 
 
 
@@ -15,7 +17,9 @@ import { CustomNavDirective } from './directives/custom-nav.directive';
     MenuComponent,
     HeaderTopComponent,
     FooterComponent,
-    CustomNavDirective
+    CustomNavDirective,
+    LoaderComponent,
+    CustomLoaderDirective
   ],
   imports: [
     CommonModule,
@@ -24,7 +28,8 @@ import { CustomNavDirective } from './directives/custom-nav.directive';
   exports:[
     MenuComponent,
     HeaderTopComponent,
-    FooterComponent
+    FooterComponent,
+    LoaderComponent
   ]
 })
 export class SharedModule { }

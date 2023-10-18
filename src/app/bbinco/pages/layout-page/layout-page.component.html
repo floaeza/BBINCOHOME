@@ -6,6 +6,9 @@
         </div>
     </div>
     <shared-header-top></shared-header-top>
-        <router-outlet></router-outlet>
+    <ng-template #divLoading>
+      <shared-loader></shared-loader>
+    </ng-template>
+        <router-outlet *ngIf="isLoading; else divLoading"></router-outlet>
     <shared-footer></shared-footer>
 </div>

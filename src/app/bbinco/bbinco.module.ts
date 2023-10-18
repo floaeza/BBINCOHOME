@@ -17,7 +17,7 @@ import { ServiceHotelsPageComponent }     from './pages/service-hotels-page/serv
 import { ServiceResidencesPageComponent } from './pages/service-residences-page/service-residences-page.component';
 import { ServicesComponent }              from './pages/services/services.component';
 import { TeamComponent }                  from './pages/team/team.component';
-import { FlipImageComponent } from './components/flip-image/flip-image.component';
+import { FlipImageComponent }             from './components/flip-image/flip-image.component';
 
 
 
