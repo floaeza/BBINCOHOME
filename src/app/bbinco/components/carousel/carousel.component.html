@@ -16,7 +16,7 @@
                             </p>
                             <div class="btn-box" *ngIf="item.buttons && item.buttons.length > 0">
                                 <!-- verde -->
-                                <a *ngFor="let button of item.buttons" [class]="button.clase" [href]="button.enlace">
+                                <a *ngFor="let button of item.buttons" [class]="button.clase" [routerLink]="button.enlace">
                                     {{button.texto}} </a>
                             </div>
                         </div>

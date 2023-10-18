@@ -15,8 +15,8 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init({
-      duration: 800, 
-      offset: 350 
+      duration: 800,
+      offset: 350
     });
     this.items = [
       {
@@ -24,14 +24,14 @@ export class CarouselComponent implements OnInit {
         title_span: "Soluciones en Tecnología",
         paragraph: "La innovación es nuestra brújula. En BBINCO, no solo hablamos de soluciones tecnológicas; las ponemos en acción. Constantemente buscamos nuevas formas de abordar los desafíos tecnológicos y ofrecer soluciones que realmente marquen la diferencia",
         buttons: [{
-          texto: "Ver mas",
+          texto: "Nosotros",
           clase: "btn-1",
-          enlace: "#"
+          enlace: "/about"
         },
         {
-          texto: "Cotiza ahora",
+          texto: "Contactanos",
           clase: "btn-2",
-          enlace: "#"
+          enlace: "/contact"
         }
       ]
       },
@@ -40,9 +40,9 @@ export class CarouselComponent implements OnInit {
         title_span: "Elevando la Tecnología",
         paragraph: "Conectar el futuro con el presente es nuestra misión. En BBINCO, trabajamos arduamente para asegurarnos de que tu empresa esté siempre un paso adelante en la evolución tecnológica, creando oportunidades en el presente para un futuro más prometedor.",
         buttons:  [{
-          texto: "Contactanos",
+          texto: "Equipo",
           clase: "btn-1",
-          enlace: "#"
+          enlace: "/team"
         }
       ]
       }
