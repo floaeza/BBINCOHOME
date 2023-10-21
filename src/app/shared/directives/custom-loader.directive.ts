@@ -1,22 +1,23 @@
-import { Directive, ElementRef, Input } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input } from '@angular/core';
+import { ImagesLoaderService } from 'src/app/bbinco/services/images-loader.service';
 
 @Directive({
   selector: '[CustomLoader]'
 })
 export class CustomLoaderDirective {
-  private htmlElement?: ElementRef<HTMLElement>;
-
-  constructor(private el: ElementRef<HTMLElement>) {
-    this.htmlElement = el;
+  constructor (
+    private el: ElementRef,
+    private imageService: ImagesLoaderService
+  ){
+    imageService.imageLoading(el.nativeElement);
+  }
+  @HostListener('load')
+  onLoad() {
+    this.imageService.imageLoadedOrError(this.el.nativeElement);
   }
 
-  @Input() set CustomLoader(loading: boolean) {
-    if( !this.htmlElement )return;
-    if (loading) {
-      this.htmlElement!.nativeElement.style.opacity = '1';
-    } else {
-      this.htmlElement!.nativeElement.style.opacity = '0';
-    }
+  @HostListener('error')
+  onError() {
+    this.imageService.imageLoadedOrError(this.el.nativeElement);
   }
-
 }

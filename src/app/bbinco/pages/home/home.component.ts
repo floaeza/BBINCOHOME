@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeAnimation } from '../../animations/fade-animations';
+import { ImagesLoaderService } from '../../services/images-loader.service';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { fadeAnimation } from '../../animations/fade-animations';
   animations: [fadeAnimation]
 })
 export class HomeComponent implements OnInit{
+  constructor ( private imageService: ImagesLoaderService) {}
   ngOnInit(): void {
 
   }

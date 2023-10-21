@@ -1,23 +1,26 @@
-.layout_padding{
+.layout_padding {
     padding-top: 120px;
     padding-bottom: 90px;
 }
-.service_section .container{
+
+.service_section .container {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.service_section .row{
+
+.service_section .row {
     padding-bottom: 25px;
 }
 
-.heading_container.heading_center{
+.heading_container.heading_center {
     -webkit-box-align: center;
     align-items: center;
     text-align: center;
     padding-bottom: 40px;
 }
-.heading_container{
+
+.heading_container {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -31,11 +34,13 @@
     text-transform: uppercase;
     padding-bottom: 10px;
 }
-.heading_container.heading_center h2::before{
+
+.heading_container.heading_center h2::before {
     left: 50%;
     transform: translateX(-50%);
 }
-.heading_container h2::before{
+
+.heading_container h2::before {
     content: "";
     width: 40px;
     height: 7px;
@@ -45,7 +50,9 @@
     bottom: 0;
 }
 
-.btn-square, .btn-sm-square, .btn-lg-square {
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
     padding: 0;
     display: flex;
     align-items: center;
@@ -53,48 +60,69 @@
     font-weight: normal;
 }
 
-.btn-square{
+.btn-square {
     width: 38px;
     height: 38px;
 }
-.btn{
+
+.btn {
     transition: .5s;
 }
-.service-item-top{
+
+.service-item-top {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    min-width: 450px;
+    transition: .5s;
     cursor: pointer;
 }
+
 .service-item-top img {
     padding: 10px;
     transition: .5s;
     cursor: pointer;
 }
 
-.service-item-top:hover img {
+.service-item-top:hover{
     transform: scale(1.1);
 }
 
-.text-truncate{
+.text-truncate {
     overflow: visible;
     cursor: pointer;
 }
 
-.custom-btn{
+.custom-btn {
     /* background-color: #1e3557; */
     color: #1e3557;
     border: 2px solid #1e3557;
     transition: all .5s;
 }
 
-.custom-btn:hover{
+.custom-btn:hover {
     color: #fff;
     background-color: #1e3557;
     border: 2px solid #1e3557;
 }
 
-@media (max-width: 768px){
-    .layout_padding{
+.img-box {
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .layout_padding {
         padding-top: 0;
+    }
+    .service-item-top{
+        min-width: 317px;
+        max-width: 317px;
     }
 }
