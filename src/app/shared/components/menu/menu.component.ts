@@ -1,6 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { SoundsService } from '../../services/sounds.service';
 
 @Component({
   selector: 'shared-menu',
@@ -9,8 +8,11 @@ import { SoundsService } from '../../services/sounds.service';
 })
 export class MenuComponent implements OnInit{
   public menuItems: MenuItem[] = [];
-  // public scrolled: boolean = false;
-  constructor(private soundService : SoundsService){}
+  public htmlElement?: ElementRef<HTMLElement>;
+  @ViewChild('navbarTogglerButton') navbarTogglerButton!: ElementRef<HTMLElement>;
+  constructor(private el: ElementRef<HTMLElement>){
+    this.htmlElement = el;
+  }
   ngOnInit(): void {
     this.menuItems = [
       {
@@ -32,27 +34,10 @@ export class MenuComponent implements OnInit{
 
     ]
   }
-  // @HostListener('window:scroll', ['$event'])
-  // onScroll() {
-  //   if (window.scrollY > 70) { // Cambia 100 a la posición en la que deseas que ocurra el cambio
-  //     this.scrolled = true;
-  //     // console.log("scrol");
 
-  //   } else {
-  //     this.scrolled = false;
-  //   }
-  // }
-  playHoverSound():void {
-    this.soundService.playSound('menu_hover.mp3')
-    .then(() => {
-      // Reproducción exitosa
-    })
-    .catch((error) => {
-      console.error('Error al reproducir el sonido:', error);
-    });
+  closeNavbar(){
+    if( !this.navbarTogglerButton )return;
+    this.navbarTogglerButton.nativeElement.click();
   }
-  stopHoverSound():void {
-    this.soundService.stopSound();
-  }
-
+ 
 }
