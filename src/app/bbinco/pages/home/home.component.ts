@@ -9,9 +9,13 @@ import { ImagesLoaderService } from '../../services/images-loader.service';
   animations: [fadeAnimation]
 })
 export class HomeComponent implements OnInit{
-  constructor ( private imageService: ImagesLoaderService) {}
+  public loading: boolean = true;
+  constructor () {}
   ngOnInit(): void {
-
+    this.loading = true;
+  }
+  onLoad(){
+    this.loading = false;
   }
 
 }

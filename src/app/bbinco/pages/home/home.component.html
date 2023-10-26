@@ -1,5 +1,6 @@
 <div [@fadeAnimation] = "true" class="main_logo_container">
-    <img src="assets/pictures/mainLogo.png" CustomLoader>
+    <p-progressSpinner *ngIf="loading"></p-progressSpinner>
+    <img (load)="onLoad()" src="assets/pictures/mainLogo.png">
     <h2>Broadband integration company</h2>
 </div>
 <component-carousel [@fadeAnimation] = "true"></component-carousel>

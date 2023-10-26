@@ -13,6 +13,8 @@ import { ScrollTopModule }    from 'primeng/scrolltop';
 import { TableModule }        from 'primeng/table';
 import { TabMenuModule }      from 'primeng/tabmenu';
 import { ToolbarModule }      from 'primeng/toolbar';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 
 
@@ -31,7 +33,9 @@ import { ToolbarModule }      from 'primeng/toolbar';
     GalleriaModule,
     RadioButtonModule,
     DividerModule,
-    ScrollTopModule
+    ScrollTopModule,
+    ProgressSpinnerModule,
+    ProgressBarModule
   ]
 })
 export class PrimeNgModule { }
