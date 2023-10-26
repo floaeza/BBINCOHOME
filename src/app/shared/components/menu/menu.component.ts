@@ -37,7 +37,9 @@ export class MenuComponent implements OnInit{
 
   closeNavbar(){
     if( !this.navbarTogglerButton )return;
-    this.navbarTogglerButton.nativeElement.click();
+    if (window.innerWidth <= 768) {
+      this.navbarTogglerButton.nativeElement.click();
+    }
   }
  
 }

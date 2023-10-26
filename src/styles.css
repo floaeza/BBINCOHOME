@@ -51,7 +51,9 @@ html, body{
 @media (max-width: 768px) {
   .img_container{
     width: 80%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    margin: auto;
+    margin-right: 50px;
   }
   .layout_padding {
     padding-top: 30px !important;
@@ -94,6 +96,8 @@ html, body{
 
   .about_section .row {
     flex-direction: column-reverse;
+    /* margin-left: 35px; */
+    margin: auto;
   }
 
   .about_section .detail-box {

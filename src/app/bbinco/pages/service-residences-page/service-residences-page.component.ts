@@ -10,12 +10,12 @@ import { ImagesFromFolderService } from '../../services/images-from-folder.servi
 })
 export class ServiceResidencesPageComponent implements OnInit{
   public imagesArray: string [] = [];
-  public imagesValenciaExperience: string [] = [];
-  public portadaPathValencia: string = '';
-  public imagesMandarinaExperience: string [] = [];
+  public imagesChilenoExperience: string [] = [];
+  public portadaPathChileno: string = '';
   public portadaPathMandarina: string = '';
-  public imagesCapeExperience: string [] = [];
-  public portadaPathCape: string = '';
+  public imagesMandarinaExperience: string [] = [];
+  public portadaPathDelMar: string = '';
+  public imagesDelMarExperience: string [] = [];
 
   constructor(private imagesFromFolderService: ImagesFromFolderService){}
   
@@ -24,12 +24,12 @@ export class ServiceResidencesPageComponent implements OnInit{
       duration: 800, 
       offset: 325 
     });
-    this.imagesArray = this.imagesFromFolderService.getImages('servicesHotels');
-    this.imagesValenciaExperience = this.imagesFromFolderService.getImages('valenciaExperience');
-    this.portadaPathValencia = 'assets/pictures/VillaLaValencia.jpeg';
-    this.portadaPathMandarina = 'assets/pictures/mandarina.jpeg';
+    this.imagesArray = this.imagesFromFolderService.getImages('servicesResidences');
+    this.imagesChilenoExperience = this.imagesFromFolderService.getImages('chilenoExperience');
+    this.portadaPathChileno = 'assets/pictures/ChilenoBayLogo.png';
     this.imagesMandarinaExperience = this.imagesFromFolderService.getImages('mandarinaExperience');
-    this.portadaPathCape = 'assets/pictures/cape.jpg';
-    this.imagesCapeExperience = this.imagesFromFolderService.getImages('capeExperience');
+    this.portadaPathMandarina = 'assets/pictures/mandarina.jpeg';
+    this.imagesDelMarExperience = this.imagesFromFolderService.getImages('delMarExperience');
+    this.portadaPathDelMar = 'assets/pictures/delMar.jpeg';
   }
 }

@@ -14,7 +14,6 @@
     -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-box-align: start;
-    align-items: flex-start;
 }
 
 .info_section .info_logo

@@ -53,6 +53,16 @@ export class ImagesFromFolderService {
         `assets/pictures/${ folderName }/1.jpg`,
         `assets/pictures/${ folderName }/2.jpg`,
         `assets/pictures/${ folderName }/3.jpg`,
+      ],
+      chilenoExperience:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
+      ],
+      delMarExperience:[
+        `assets/pictures/${ folderName }/1.jpg`,
+        `assets/pictures/${ folderName }/2.jpg`,
+        `assets/pictures/${ folderName }/3.jpg`,
       ]
     };
 

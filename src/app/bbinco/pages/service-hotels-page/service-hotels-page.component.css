@@ -169,7 +169,6 @@
 .layout_padding {
     padding-top: 0px;
     padding-bottom: 0px;
-
 }
 
 .product_section .row {
@@ -277,7 +276,7 @@
     }
 
     .product_text h2::before {
-        margin-top: 16%;
+        margin-top: 29%;
     }
 
     .product_section_2 p {
@@ -286,4 +285,19 @@
     .flip-card{
         height: 185px;
     }
+    .about_section .detail-box .btn-box {
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .layout_padding {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .img-flip{
+        display: block;
+        padding-bottom: 140px;
+    }
+    
 }
